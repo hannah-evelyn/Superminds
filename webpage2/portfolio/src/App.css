@@ -5,8 +5,8 @@ body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  background: #f9fafb;
-  color: #111827;
+  background: #add8e6;
+  color: #071430;
 }
 
 .page {
@@ -14,7 +14,7 @@ body {
   height: 100vh;        /* 2. Use the full height of the screen */
   min-height: 100vh;
   display: flex;        /* 3. Turn on the "Centering Engine" (Flexbox) */
-  
+  flex-direction: column;
   justify-content: center;  /* 4. Centers content VERTICALLY */
   align-items: center;      /* 5. Centers content HORIZONTALLY */
   
@@ -36,7 +36,7 @@ body {
   justify-content: center;
   gap: 30px;
   padding: 15px 30px;
-  background: #111827;
+  background: #071430;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -50,7 +50,7 @@ body {
 }
 
 .nav-link.active {
-  color: #facc15; /* highlight active page */
+  color: #add8e6; /* highlight active page */
 }
 
 /* ------------------------
@@ -69,13 +69,13 @@ body {
   height: 180px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid #2563eb;
+  border: 3px solid #071430;
 }
 
 .hero-text h1 {
   margin: 0;
   font-size: 2.5rem;
-  color: #111827;
+  color: #071430;
 }
 
 .hero-text p {
@@ -150,12 +150,12 @@ body {
   padding: 10px;
   border-radius: 5px;
   border: none;
-  background: #2563eb;
+  background: #071430;
   color: white;
   cursor: pointer;
   transition: background 0.3s;
 }
 
 .contact-form button:hover {
-  background: #1e40af;
+  background: #556dbc;
 }

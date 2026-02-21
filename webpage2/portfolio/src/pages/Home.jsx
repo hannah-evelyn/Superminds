@@ -6,7 +6,6 @@ function Home() {
   return (
     <motion.div
       className="page home-page"
-      style={{ position: "absolute", width: "100%" }}
       variants={pageVariants}       // animation states (initial, in, out)
       initial="initial"             // start state
       animate="in"                  // animate to visible
