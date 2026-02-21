@@ -11,7 +11,6 @@ body {
 
 .page {
   width: 100vw;         /* 1. Use the full width of the screen */
-  height: 100vh;        /* 2. Use the full height of the screen */
   min-height: 100vh;
   display: flex;        /* 3. Turn on the "Centering Engine" (Flexbox) */
   flex-direction: column;
@@ -19,6 +18,7 @@ body {
   align-items: center;      /* 5. Centers content HORIZONTALLY */
   
   text-align: center;       /* 6. Centers the actual text inside the tags */
+
 }
 .page-content { 
   max-width: 1000px; /* 1. Don't let the content get wider than 1000px */ 
