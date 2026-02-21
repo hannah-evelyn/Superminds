@@ -159,3 +159,23 @@ body {
 .contact-form button:hover {
   background: #556dbc;
 }
+
+.form-success {
+  margin-top: 10px;
+  color: #22c55e;
+  font-weight: 500;
+}
+
+
+.form-error {
+  margin-top: 10px;
+  color: #ef4444;
+  font-weight: 500;
+}
+
+
+.contact-form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
