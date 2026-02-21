@@ -1,57 +1,61 @@
-/*
-Global & Base Styles
-*/
-
+/* ------------------------
+   Global / Base Styles
+------------------------- */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  background: #add8e6; /* light background for being able to actually see */
+  background: #f9fafb;
+  color: #111827;
 }
 
 .page {
- /*padding: 40px;*/
- width: 100vw;
- min-height: 100 vh;
- display: flex;
-
+  width: 100vw;         /* 1. Use the full width of the screen */
+  height: 100vh;        /* 2. Use the full height of the screen */
+  min-height: 100vh;
+  display: flex;        /* 3. Turn on the "Centering Engine" (Flexbox) */
+  
+  justify-content: center;  /* 4. Centers content VERTICALLY */
+  align-items: center;      /* 5. Centers content HORIZONTALLY */
+  
+  text-align: center;       /* 6. Centers the actual text inside the tags */
+}
+.page-content { 
+  max-width: 1000px; /* 1. Don't let the content get wider than 1000px */ 
+  width: 100%; /* 2. On small screens (phones), take up the whole width */ 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; /* 3. Ensures images/buttons inside this div are centered */ 
 }
 
-.page-content {
-  max-width: 1000px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-
-}
-
-/*
-Navbar
-*/
-
+/* ------------------------
+   Navbar
+------------------------- */
 .navbar {
   display: flex;
-  gap: 20px;
-  padding: 15px 30px;
-  background: #071430;
-  
   justify-content: center;
-  align-items: center;
-
-  text-align: center;
+  gap: 30px;
+  padding: 15px 30px;
+  background: #111827;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .nav-link {
-  color: white;
   text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.2s;
 }
 
-/*
-Home Page
-*/
+.nav-link.active {
+  color: #facc15; /* highlight active page */
+}
 
+/* ------------------------
+   Home Page
+------------------------- */
 .home-page .hero {
   display: flex;
   align-items: center;
@@ -61,16 +65,16 @@ Home Page
 }
 
 .hero-img {
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid #071430;
+  border: 3px solid #2563eb;
 }
 
 .hero-text h1 {
   margin: 0;
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #111827;
 }
 
@@ -80,11 +84,9 @@ Home Page
   line-height: 1.5;
 }
 
-
-/*
-About Page
-*/
-
+/* ------------------------
+   About Page
+------------------------- */
 .skills-grid {
   display: flex;
   flex-wrap: wrap;
@@ -108,35 +110,28 @@ About Page
   margin-bottom: 5px;
 }
 
-/*
-Projects Page
-*/
-
+/* ------------------------
+   Projects Page
+------------------------- */
 .projects-grid {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  gap: 20px;
+  gap: 25px;
+  padding: 20px;
 }
 
 .project-card {
-  flex: 1 1 200px;
-  background: #e0e0e0;
+  background: #f0f0f0;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 12px;
   text-decoration: none;
   color: #111;
-  transition: transform 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.project-card:hover {
-  transform: scale(1.05);
-}
-
-/*
-Contact Page
-*/
-
+/* ------------------------
+   Contact Page
+------------------------- */
 .contact-form {
   display: flex;
   flex-direction: column;

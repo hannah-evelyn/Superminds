@@ -1,16 +1,31 @@
-import profilePic from "../assets/profile_pic.jpg"; // optional local image
+import { motion } from "framer-motion";
+import profilePic from "../assets/profile_pic.jpg"; // replace with your own
+import { pageVariants, pageTransition } from "../animationVariants";
 
 function Home() {
   return (
-    <div className="page home-page">
+    <motion.div
+      className="page home-page"
+      style={{ position: "absolute", width: "100%" }}
+      variants={pageVariants}       // animation states (initial, in, out)
+      initial="initial"             // start state
+      animate="in"                  // animate to visible
+      exit="out"                    // exit animation
+      transition={pageTransition}   // timing for animation
+    >
       <div className="hero">
         <img src={profilePic} alt="Profile" className="hero-img" />
         <div className="hero-text">
           <h1>Hi, I'm Hannah</h1>
-          <p>Computer Science Student learning how to develope webpages using HTML/CSS and React.js</p>
+          <p>
+            I'm a student developer building modern web apps with React, Vite, and cool animations.
+          </p>
+          <p>
+            Welcome to my portfolio! Scroll down to see my projects and skills.
+          </p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
