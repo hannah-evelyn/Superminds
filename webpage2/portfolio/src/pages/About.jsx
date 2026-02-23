@@ -2,11 +2,22 @@ import { motion } from "framer-motion";
 import jsLogo from "../assets/javascript.png";
 import reactLogo from "../assets/react.png";
 import cssLogo from "../assets/css.png";
+import javaLogo from "../assets/java.png";
+import htmllogo from "../assets/html.png";
+import pythonlogo from "../assets/python.png";
+import sqllogo from "../assets/sql.png";
+import cpplogo from "../assets/cpp.png";
 
 const skills = [
+  {name : "HTML", img : htmllogo},
+  { name: "CSS", img: cssLogo },
   { name: "JavaScript", img: jsLogo },
   { name: "React", img: reactLogo },
-  { name: "CSS", img: cssLogo },
+  {name : "Java", img: javaLogo},
+  {name : "Python", img: pythonlogo},
+  {name : "C++", img: cpplogo},
+  {name : "SQL", img: sqllogo}
+  
 ];
 
 function About() {
