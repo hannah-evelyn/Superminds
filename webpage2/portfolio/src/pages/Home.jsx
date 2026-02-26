@@ -17,10 +17,10 @@ function Home() {
         <div className="hero-text">
           <h1>Hi, I'm Hannah</h1>
           <p>
-            I'm a student developer building modern web apps with React, Vite, and cool animations.
+            Welcome to my portfolio!
           </p>
           <p>
-            Welcome to my portfolio! Scroll down to see my projects and skills.
+            I'm a Computer Science student building modern web apps with React and Vite.
           </p>
         </div>
       </div>
