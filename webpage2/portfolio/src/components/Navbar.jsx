@@ -4,9 +4,10 @@ import { motion } from "framer-motion";
 function Navbar() {
   const links = [
     { name: "Home", path: "/" },
+    { name: "Background", path: "/background"},
     { name: "About", path: "/about" },
     { name: "Projects", path: "/projects" },
-    { name: "Contact", path: "/contact" },
+    { name: "Contact", path: "/contact" }
   ];
 
   return (
